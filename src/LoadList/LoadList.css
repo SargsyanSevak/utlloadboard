@@ -1,0 +1,12 @@
+.LoadList {
+    display: flex;
+    flex-direction: column;
+     margin-top: 138px;
+}
+
+@media only screen and (max-width: 760px) {
+    .LoadList{
+        gap: 20px;
+       margin-top: 172px;
+    }
+}
