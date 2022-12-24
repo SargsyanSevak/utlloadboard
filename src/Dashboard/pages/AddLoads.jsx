@@ -63,7 +63,7 @@ function onSubmit(data){
             <input type="text" value={userName} {...register("owner")} style={{visibility:'hidden'}}/>
             </div>
             <div className="hidden">
-            <input type="text" value={userName} {...register("owner")} style={{visibility:'hidden'}}/>
+            <input type="text" value='' {...register("status")} style={{visibility:'hidden'}}/>
             </div>
             <Stack direction='row' spacing={8} mt={2}>
             <Button variant="contained" size='large'onClick={handleSubmit(onSubmit)}>Ավելացնել</Button>

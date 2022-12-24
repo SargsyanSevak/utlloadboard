@@ -29,6 +29,7 @@ const style = {
 };
 
 export default function  ChangePassword() {
+
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -42,8 +43,11 @@ export default function  ChangePassword() {
   const changepassword = (id, newPassword) => {
     auth
     .put(`/change/${id}`, newPassword)
-    window.location.reload();
+    //window.location.reload();
   };
+  console.log(activeUser)
+  console.log(changedPassword)
+  console.log(oldPassword)
   return (
     <div>
       <span onClick={handleOpen} className='changepassword' style={{
@@ -96,7 +100,7 @@ export default function  ChangePassword() {
                 <Button variant='contained'  onClick={(e)=>{
                     e.preventDefault()
                     if(oldPassword === activeUser.password && changedPassword !== ''){
-                      changepassword(activeUser._id,{password : changedPassword})
+                      changepassword(activeUser[0]._id,{password : changedPassword})
                          setBlock(false)
                          setSuccessAlert(true)
                          setTimeout(()=>{
