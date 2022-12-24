@@ -75,7 +75,7 @@ const ChangeLoads = () => {
                     </NativeSelect>
                   </FormControl>
     </Box>
-                <span onClick={() => deletePost(el._id)}><i className="fa-solid fa-trash"></i></span>
+                <span><i className="fa-solid fa-trash" onClick={() => deletePost(el._id)}></i></span>
               </ul>
             </div>
           )
