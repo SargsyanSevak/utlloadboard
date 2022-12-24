@@ -50,6 +50,7 @@ const ChangeLoads = () => {
                 <li className='weight'>{el.weight}տ</li>
                 <li className='price'>${el.price}</li>
                 <li className='date'>{el.date}</li>
+                <li className='date'>{el.status}</li>
                 <Box sx={{ minWidth: 120 }}>
                   <FormControl fullWidth  onChange={(e)=>{
                     changeStatus(el._id,{status: e.target.value})
