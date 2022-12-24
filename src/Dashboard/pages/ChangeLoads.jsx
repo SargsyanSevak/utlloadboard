@@ -27,9 +27,7 @@ const ChangeLoads = () => {
  
     instance
     .put(`/update/${id}`, statusObj)
-    console.log(id)
-    console.log(statusObj)
-    // window.location.reload();
+        window.location.reload();
   };
   return (
     <div className="UserLoads">
@@ -50,7 +48,12 @@ const ChangeLoads = () => {
                 <li className='weight'>{el.weight}տ</li>
                 <li className='price'>${el.price}</li>
                 <li className='date'>{el.date}</li>
-                <li className='date'>{el.status}</li>
+                <li className='date'>{el.status === 'approved' ?  <i className="fa fa-solid fa-check-double"></i> : 
+                el.status === 'onroad' ?  <i className="onroad_icon fa fa-duotone fa-road"></i> : 
+                el.status === 'delivered' ? <i className="delivered_icon fa fa-duotone fa-truck-ramp-box"></i> :
+                el.status === 'canceled' ? <i className="fa fa-solid fa-ban"></i>  : ''
+                }
+                </li>
                 <Box sx={{ minWidth: 120 }}>
                   <FormControl fullWidth  onChange={(e)=>{
                     changeStatus(el._id,{status: e.target.value})
@@ -64,7 +67,7 @@ const ChangeLoads = () => {
                         id: 'uncontrolled-native',
                       }}
                     >
-                      <option value='approved'></option>
+                      <option>Ընտրել</option>
                       <option value='approved'>Հաստատված</option>
                       <option value='onroad'>Ճանապարհին</option>
                       <option value='delivered'>Բեռնաթափված</option>
