@@ -65,7 +65,7 @@
 }
 .navItems li a{
 	display: block;
-	padding: 13px 30px;
+	padding: 13px 0px 13px 15px;
 	border-bottom: 1px solid #10558d;
 	color: rgb(241, 237, 237);
 	font-size: 16px;
@@ -408,9 +408,15 @@ rect{
         padding-bottom: 20px;
     }
     .loadsInfo .loadsInfoItem {
-        width: 120px;
-        height: 120px;
-    }.addNewLoad form .inputBox{
+        width: 100px;
+        height: 100px;
+        font-size: 12px;
+        letter-spacing: 0px;
+    }
+    .loadsInfo .loadsInfoItem .fa {
+        font-size: 25px;
+    }
+    .addNewLoad form .inputBox{
         flex: 0 0 40%;
         max-width: 40%;
     }.addLoadBtn{
@@ -432,6 +438,10 @@ rect{
       .statistics{
         padding: 20px;
         gap: 30px;
+      }
+      .navItems li a{
+        font-size: 13px;
+        padding-left: 20px;
       }
    
   }
