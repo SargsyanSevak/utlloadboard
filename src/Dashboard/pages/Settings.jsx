@@ -15,7 +15,7 @@ const Settings = () => {
   const [success,setSuccess] = useState(false)
   const changepassword = (id, newPassword) => {
      auth
-    .put(`/update/${id}`, newPassword)
+    .put(`/change/${id}`, newPassword)
   };
   return (
     <>
