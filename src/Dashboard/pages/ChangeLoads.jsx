@@ -24,9 +24,12 @@ const ChangeLoads = () => {
   };
 
   const changeStatus = (id, statusObj) => {
+ 
     instance
     .put(`/update/${id}`, statusObj)
-    window.location.reload();
+    console.log(id)
+    console.log(statusObj)
+    // window.location.reload();
   };
   return (
     <div className="UserLoads">
