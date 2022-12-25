@@ -106,7 +106,9 @@ export default function PrimarySearchAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="absolute">
+      <AppBar position="absolute" style={{
+        background : 'linear-gradient(217deg, rgba(1, 66, 15, 0.9), rgba(255,0,0,0) 90.71%),linear-gradient(127deg, rgba(0, 0, 0, 0.9), rgba(0,255,0,0) 90.71%),linear-gradient(336deg, rgba(0, 0, 3, 0.9), rgba(45, 187, 41, 0) 90.71%)'
+      }}>
         <Toolbar>
           <IconButton onClick={()=>setIsActive(!isActive)}
             size="large"

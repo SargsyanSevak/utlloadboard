@@ -2,7 +2,7 @@
     width: 100%;
     height: 100vh;
     display: flex;
-    background:rgb(27, 172, 240);
+    background:rgb(44, 197, 30);
     overflow: hidden;
 }
 
@@ -20,7 +20,9 @@
     top: 80px;
 }
 .sidebar{
-	background: rgb(5, 68, 104);
+    background:linear-gradient(217deg, rgba(1, 66, 15, 0.9), rgba(255,0,0,0) 90.71%),
+	linear-gradient(127deg, rgba(0, 0, 0, 0.9), rgba(0,255,0,0) 90.71%),
+	linear-gradient(336deg, rgba(0, 0, 3, 0.9), rgba(45, 187, 41, 0) 90.71%);
 	position: fixed;
 	top: 66px;
 	left: 0;
@@ -66,7 +68,7 @@
 .navItems li a{
 	display: block;
 	padding: 13px 0px 13px 15px;
-	border-bottom: 1px solid #10558d;
+	border-bottom: 1px solid #016e22;
 	color: rgb(241, 237, 237);
 	font-size: 16px;
 	position: relative;
@@ -98,7 +100,9 @@
 }
 
 .closeSidebar{
-    background: rgb(5, 68, 104);
+    background:linear-gradient(217deg, rgba(1, 66, 15, 0.9), rgba(255,0,0,0) 90.71%),
+    linear-gradient(127deg, rgba(0, 0, 0, 0.9), rgba(0,255,0,0) 90.71%),
+    linear-gradient(336deg, rgba(0, 0, 3, 0.9), rgba(45, 187, 41, 0) 90.71%);
 	position: fixed;
 	top: 66px;
 	left: -225px;
@@ -150,6 +154,7 @@
 .delivered_icon{
     font-size: 20px;
 }
+
 .statistics{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 300;

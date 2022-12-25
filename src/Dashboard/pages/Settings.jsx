@@ -13,6 +13,7 @@ const Settings = () => {
   const [visiblePass,setVisiblePass] = useState(false)
   const [changedPassword,setChangedPassword] = useState('')
   const [success,setSuccess] = useState(false)
+  
   const changepassword = (id, newPassword) => {
      auth
     .put(`/change/${id}`, newPassword)
