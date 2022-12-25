@@ -7,7 +7,7 @@ const Layout = () => {
     <div className='DashBoard'>
        <AsideMenu />
        <PrimarySearchAppBar/>
-      <Outlet />
+       <Outlet />
     </div>
   )
 }

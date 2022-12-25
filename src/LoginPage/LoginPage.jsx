@@ -9,7 +9,6 @@ import auth from '../auth'
 
 const LoginPage = () => {
 
-    const {setUser} = useContext(ContextValue)
     const [notFound,setNotFound] = useState(false)
     const {setActiveUser} = useContext(ContextValue)
     const {register,handleSubmit,reset} = useForm({
@@ -40,8 +39,6 @@ const LoginPage = () => {
         })
         reset()
        }
-      
-
 
   return (
     <>

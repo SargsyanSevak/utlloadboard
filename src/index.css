@@ -10,7 +10,6 @@ body {
     flex-direction: column;
     margin: 0;
     background:rgb(217, 219, 216);
-    visibility:vi
   }
   @media only screen and (max-width: 900px) {
     .ContactInfo {

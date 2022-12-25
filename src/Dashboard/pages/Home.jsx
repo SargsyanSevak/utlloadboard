@@ -36,8 +36,8 @@ const Home = () => {
   ];
   const [value, onChange] = useState(new Date());
   return (
-<div className='content home_page'>
-    <div className="loadsInfo">
+    <div className='content home_page'>
+      <div className="loadsInfo">
         <div className="loadsInfoItem">
           <span className='loadIcon'><i className="fa fa-solid fa-list-check"></i></span> Բեռների քանակ
           <span className='count'>{allLoads.length}</span>
@@ -70,14 +70,12 @@ const Home = () => {
               width : '500px',
               maxWidth : '100%'
             }}
-              />
-                      :
-                      <div className='isChart'>
-                        <AnnouncementIcon fontSize='large'/>
-                        <p>Գրաֆիկը անհասանելի է, քանի որ Դուք դեռ չունեք բեռներ:</p>
-                        </div>
-        }
-      
+            />:
+              <div className='isChart'>
+                <AnnouncementIcon fontSize='large'/>
+                  <p>Գրաֆիկը անհասանելի է, քանի որ Դուք դեռ չունեք բեռներ:</p>
+              </div>
+         }
         <div className='calendar'>
         <Calendar
          onChange={onChange} 

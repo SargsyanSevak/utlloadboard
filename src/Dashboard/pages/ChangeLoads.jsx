@@ -74,7 +74,7 @@ const ChangeLoads = () => {
                       <option value='canceled'>Չեղարկված</option>
                     </NativeSelect>
                   </FormControl>
-    </Box>
+                </Box>
                 <span><i className="fa-solid fa-trash" onClick={() => deletePost(el._id)}></i></span>
               </ul>
             </div>

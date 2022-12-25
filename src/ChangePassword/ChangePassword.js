@@ -10,6 +10,7 @@ import auth from '../auth'
 import { ContextValue } from '../Context/Context';
 import { useContext } from 'react';
 import { useState } from 'react';
+
 const style = {
   position: 'absolute',
   top: '50%',
@@ -37,20 +38,19 @@ export default function  ChangePassword() {
   const [oldPassword,setOldPassword] = useState('')
   const [block,setBlock] = useState(false)
   const [successAlert,setSuccessAlert] = useState(false)
-  const {user} = useContext(ContextValue)
   const {activeUser} = useContext(ContextValue)
 
   const changepassword = (id, newPassword) => {
     auth
     .put(`/change/${id}`, newPassword)
-    //window.location.reload();
   };
-  console.log(activeUser)
-  console.log(changedPassword)
-  console.log(oldPassword)
+
   return (
     <div>
-      <span onClick={handleOpen} className='changepassword' style={{
+      <span 
+        onClick={handleOpen} 
+        className='changepassword'
+        style={{
         'fontSize' : '14px',
         'letterSpacing':'0.5px'
       }}><i className="fa fa-duotone fa-lock"></i>Փոխել գաղտնաբառը</span>
@@ -71,7 +71,6 @@ export default function  ChangePassword() {
               Փոխել գաղտնաբառը
             </Typography>
                 <TextField 
-                
                 id="outlined-basic" 
                 label="հին գաղտնաբառը" 
                 variant="outlined" 
@@ -85,7 +84,6 @@ export default function  ChangePassword() {
               }}
                 />
                 <TextField 
-                
                 id="outlined-basic" 
                 label="նոր գաղտնաբառը" 
                 variant="outlined" 
@@ -97,9 +95,10 @@ export default function  ChangePassword() {
                 onChange={(e)=>{
                     setChangedPassword(e.target.value)
                 }}/>
-                <Button variant='contained'  onClick={(e)=>{
+                <Button variant='contained'  
+                  onClick={(e)=>{
                     e.preventDefault()
-                    if(oldPassword === activeUser.password && changedPassword !== ''){
+                    if(oldPassword === activeUser[0].password && changedPassword !== ''){
                       changepassword(activeUser[0]._id,{password : changedPassword})
                          setBlock(false)
                          setSuccessAlert(true)
@@ -111,11 +110,10 @@ export default function  ChangePassword() {
                       setOpen(!false)
                       setBlock(true)
                     }
-                  
                 }}>պահպանել</Button>
                 <Alert 
-                severity="success" 
-                style={{
+                  severity="success" 
+                  style={{
                   display : successAlert ? 'flex' : 'none'
                 }}
                 >Ձեր գաղտնաբառը հաջողությամբ թարմացվել է</Alert>

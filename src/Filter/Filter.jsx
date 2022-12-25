@@ -11,15 +11,15 @@ const Filter = () => {
         mode : "onChange",
       })
 
-      function handleValues (dataOfInputs){
-        let truckType = dataOfInputs.trucktype;
-        let pickUp = dataOfInputs.pickup;
-        let delivery = dataOfInputs.delivery;
-        let date = dataOfInputs.date;
-        let weight = dataOfInputs.weight;
-        let rate = dataOfInputs.price;
-        setFilteredObj(data.filter((load)=>{
-         return (
+function handleValues (dataOfInputs){
+    let truckType = dataOfInputs.trucktype;
+    let pickUp = dataOfInputs.pickup;
+    let delivery = dataOfInputs.delivery;
+    let date = dataOfInputs.date;
+    let weight = dataOfInputs.weight;
+    let rate = dataOfInputs.price;
+    setFilteredObj(data.filter((load)=>{
+        return (
             load.trucktype.toLowerCase().includes(truckType) 
             && load.pickup.toLowerCase().includes(pickUp.toLowerCase())
             && load.delivery.toLowerCase().includes(delivery.toLowerCase())
@@ -29,8 +29,7 @@ const Filter = () => {
          )
         }))
        }
-
-  return (
+    return (
         <Accordion className='Accordion filter'>
             <AccordionItem className='AccordionItem'>
                 <AccordionHeader className='AccordionHeader filter-header'>

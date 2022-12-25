@@ -13,13 +13,13 @@ function LoadBoard() {
       return (
         <div className="App">
           <Header 
-          loads={data} setLoads={setData}
+          loads={data} 
+          setLoads={setData}
           />
           <Filter/>
           {!data.length ? <Skeleton_UI/> : <LoadList 
           loads={data}
           />}
-          
         </div>
       );
     }

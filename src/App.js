@@ -19,7 +19,7 @@ import auth from './auth';
 function App() {
 
 const {setData} = useContext(ContextValue)
-const {user,setUser} = useContext(ContextValue)
+const {setUser} = useContext(ContextValue)
 const {setActiveUser} = useContext(ContextValue)
 const loggedIn = localStorage.getItem('logged')
 let userName = localStorage.getItem('userName')
@@ -43,11 +43,9 @@ auth
     })
 }, []);
 
-
-  
 return  (
      <>
-  <Routes>
+      <Routes>
         <Route path='/' element={loggedIn ? <LoadBoard/> : <LoginPage/>}/>
         <Route path="login" element={<LoginPage/>}/>
         <Route path='register' element={<RegisterPage/>}/>
@@ -66,7 +64,7 @@ return  (
           <Route path='/dashboard/settings' element={<Settings/>}/>
         </Route>
     </Routes>
-</>
+  </>
   )
 }
 

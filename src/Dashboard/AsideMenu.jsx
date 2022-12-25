@@ -7,7 +7,6 @@ import { ContextValue } from '../Context/Context';
 const AsideMenu = () => {
 
  const {isActive} = useContext(ContextValue)
-let navigate = useNavigate()
   let userName = localStorage.getItem('userName')
 
   return (

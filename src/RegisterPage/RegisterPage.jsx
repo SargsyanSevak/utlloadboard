@@ -35,9 +35,7 @@ let navigate = useNavigate()
       })
       .catch((err) => console.log(err));
         },3000)
-       
       }
-     
     }
 
   return (

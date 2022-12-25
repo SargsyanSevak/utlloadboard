@@ -6,6 +6,8 @@ import VisibilityIcon from '@mui/icons-material/Visibility';
 import Stack from '@mui/material/Stack';
 import auth from '../../auth'
 import useMediaQuery from '@mui/material/useMediaQuery';
+
+
 const Settings = () => {
   const matches = useMediaQuery('(max-width:780px)');
   const {activeUser} = useContext(ContextValue)
@@ -125,7 +127,6 @@ const Settings = () => {
               >Ձեր գաղտնաբառը հաջողությամբ թարմացվել է</Alert>
            </Stack>
       </div>
-      
     </div>
     </>
    
