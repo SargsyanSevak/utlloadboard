@@ -58,7 +58,7 @@ const BigChartBox = () => {
 
   return (
     <div className="bigChartBox">
-      <h1>Բեռնափոխադրումների վերլուծություն</h1>
+      <h1 style={{ fontSize: '20px' }}>Բեռնափոխադրումների վերլուծություն</h1>
       <div className="chart">
         <ResponsiveContainer width="99%" height="100%">
           <AreaChart

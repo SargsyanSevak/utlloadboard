@@ -53,7 +53,7 @@ export const topDealUsers = [
 export const chartBoxUser = {
   color: "#8884d8",
   icon: "/userIcon.svg",
-  title: "Total Users",
+  title: "Ընդհանուր օգտվողներ",
   number: "11.238",
   dataKey: "users",
   percentage: 45,
@@ -71,7 +71,7 @@ export const chartBoxUser = {
 export const chartBoxProduct = {
   color: "skyblue",
   icon: "/productIcon.svg",
-  title: "Total Products",
+  title: "Բեռներ",
   number: "238",
   dataKey: "products",
   percentage: 21,
@@ -88,7 +88,7 @@ export const chartBoxProduct = {
 export const chartBoxRevenue = {
   color: "teal",
   icon: "/revenueIcon.svg",
-  title: "Total Revenue",
+  title: "Ընդհանուր եկամուտը",
   number: "$56.432",
   dataKey: "revenue",
   percentage: -12,
@@ -105,7 +105,7 @@ export const chartBoxRevenue = {
 export const chartBoxConversion = {
   color: "gold",
   icon: "/conversionIcon.svg",
-  title: "Total Ratio",
+  title: "Ընդհանուր հարաբերակցություն",
   number: "2.6",
   dataKey: "ratio",
   percentage: 12,
@@ -121,72 +121,72 @@ export const chartBoxConversion = {
 };
 
 export const barChartBoxRevenue = {
-  title: "Profit Earned",
+  title: "Ստացված եկամուտ",
   color: "#8884d8",
   dataKey: "profit",
   chartData: [
     {
-      name: "Sun",
+      name: "երկ",
       profit: 4000,
     },
     {
-      name: "Mon",
+      name: "երք",
       profit: 3000,
     },
     {
-      name: "Tue",
+      name: "Չոր",
       profit: 2000,
     },
     {
-      name: "Wed",
+      name: "Հնգ",
       profit: 2780,
     },
     {
-      name: "Thu",
+      name: "Որբ",
       profit: 1890,
     },
     {
-      name: "Fri",
+      name: "Շբթ",
       profit: 2390,
     },
     {
-      name: "Sat",
+      name: "Կիր",
       profit: 3490,
     },
   ],
 };
 
 export const barChartBoxVisit = {
-  title: "Total Visit",
+  title: "Դիտումներ",
   color: "#FF8042",
   dataKey: "visit",
   chartData: [
     {
-      name: "Sun",
+      name: "երկ",
       visit: 4000,
     },
     {
-      name: "Mon",
+      name: "երք",
       visit: 3000,
     },
     {
-      name: "Tue",
+      name: "Չոր",
       visit: 2000,
     },
     {
-      name: "Wed",
+      name: "Հնգ",
       visit: 2780,
     },
     {
-      name: "Thu",
+      name: "Որբ",
       visit: 1890,
     },
     {
-      name: "Fri",
+      name: "Շբթ",
       visit: 2390,
     },
     {
-      name: "Sat",
+      name: "Կիր",
       visit: 3490,
     },
   ],

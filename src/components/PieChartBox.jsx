@@ -20,7 +20,7 @@ const PieChartBox = () => {
   }
   return (
     <div className="pieChartBox">
-      <h1>Բեռների վիճակագրություն</h1>
+      <h1 style={{ fontSize: '20px', marginBottom: '20px' }}>Բեռների վիճակագրություն</h1>
       <div className="chart">
         <ResponsiveContainer width="99%" height={300}>
           <PieChart>
